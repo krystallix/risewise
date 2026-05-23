@@ -1,30 +1,20 @@
-import { Geist, Geist_Mono, Inter } from "next/font/google"
+import type { Metadata } from "next";
+import "./globals.css";
 
-import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils";
-
-const inter = Inter({subsets:['latin'],variable:'--font-sans'})
-
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-})
+export const metadata: Metadata = {
+  title: "Proposal Penawaran — Sistem Manajemen Toko Aki | Aji Nursafiki",
+  description:
+    "Proposal penawaran jasa pembuatan sistem manajemen bisnis berbasis web untuk toko aki dan usaha otomotif. Disiapkan oleh Aji Nursafiki, pengembang web freelance di Yogyakarta.",
+};
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", inter.variable)}
-    >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
+    <html lang="id">
+      <body>{children}</body>
     </html>
-  )
+  );
 }

@@ -1,19 +1,35 @@
-import { Button } from "@/components/ui/button"
+import { PrintBar } from "@/components/proposal/PrintBar";
+import { Cover } from "@/components/proposal/Cover";
+import { TableOfContents } from "@/components/proposal/TableOfContents";
+import { Introduction } from "@/components/proposal/Introduction";
+import { Background } from "@/components/proposal/Background";
+import { Goals } from "@/components/proposal/Goals";
+import { Features } from "@/components/proposal/Features";
+import { Deliverables } from "@/components/proposal/Deliverables";
+import { Timeline } from "@/components/proposal/Timeline";
+import { Pricing } from "@/components/proposal/Pricing";
+import { Terms } from "@/components/proposal/Terms";
+import { Closing } from "@/components/proposal/Closing";
 
-export default function Page() {
+export default function ProposalPage() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
+    <>
+      <PrintBar />
+
+      {/* Top padding so pages clear the fixed bar */}
+      <div className="proposal-shell" style={{ paddingTop: "60px" }}>
+        <Cover />
+        <TableOfContents />
+        <Introduction />
+        <Background />
+        <Goals />
+        <Features />
+        <Deliverables />
+        <Timeline />
+        <Pricing />
+        <Terms />
+        <Closing />
       </div>
-    </div>
-  )
+    </>
+  );
 }
