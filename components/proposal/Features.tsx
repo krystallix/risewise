@@ -16,7 +16,7 @@ const featuresPage1: FeatureRow[] = [
     title: "Katalog Produk",
     tag: "Website Publik",
     desc: "Halaman katalog lengkap dengan filter kategori, merek, ampere, dan kondisi. Search real-time. Setiap produk menampilkan foto, harga, spesifikasi teknis, dan tombol Pesan via WhatsApp.",
-    benefit: "Pelanggan bisa lihat stok dan harga tanpa harus datang ke toko.",
+    benefit: "Pelanggan dapat dengan mudah mencari aki sesuai kebutuhan.",
     img: "/ref/feature_01.png",
     imgAlt: "Katalog produk Siswanto Aki",
   },
@@ -47,7 +47,7 @@ const featuresPage2: FeatureRow[] = [
     tag: "Katalog",
     desc: "Halaman detail produk menampilkan foto, harga tukar tambah, spesifikasi teknis (kapasitas Ah, voltase, tipe, garansi), dan daftar kendaraan yang cocok menggunakan aki tersebut.",
     benefit: "Pelanggan yakin membeli tanpa perlu banyak pertanyaan.",
-    img: "/ref/feature_06.png",
+    img: "/ref/feature_04.png",
     imgAlt: "Detail produk aki dengan spesifikasi lengkap",
   },
 ];
@@ -59,7 +59,7 @@ const featuresPage3: FeatureRow[] = [
     tag: "Business Intelligence",
     desc: "Menampilkan ringkasan pendapatan, profit, grafik 6 bulan terakhir, produk terlaris, transaksi terbaru, info stok menipis, serta inventori aki bekas dalam satu layar utama.",
     benefit: "Tahu kondisi bisnis hari ini tanpa hitung manual dari buku kas.",
-    img: "/ref/feature_04.png",
+    img: "/ref/feature_05.png",
     imgAlt: "Dashboard manajemen bisnis",
   },
   {
@@ -68,7 +68,7 @@ const featuresPage3: FeatureRow[] = [
     tag: "Kasir Digital",
     desc: "Catat penjualan, pembelian stok, dan tukar tambah secara langsung dengan pemotongan stok otomatis. Invoice digital dibuat instan dengan tampilan profesional, lengkap dengan QR Code dan tombol share cepat ke WhatsApp.",
     benefit: "Nota terkirim ke pelanggan dalam hitungan detik, tanpa tulis tangan.",
-    img: "/ref/feature_05.png",
+    img: "/ref/feature_06.png",
     imgAlt: "Transaksi dan invoice digital",
   },
 ];
@@ -80,6 +80,7 @@ const featuresPage4: FeatureRow[] = [
     tag: "Inventori",
     desc: "Tambah, edit, hapus produk. Kelola harga modal, jual, dan tukar tambah. Upload foto. Peringatan otomatis saat stok tersisa 3 unit atau kurang.",
     benefit: "Tidak ada lagi stok habis tanpa disadari saat ada pembeli.",
+    img: "/ref/feature_07.png",
   },
   {
     no: "08",
@@ -87,6 +88,7 @@ const featuresPage4: FeatureRow[] = [
     tag: "CRM & Keamanan",
     desc: "Simpan nama, HP, dan riwayat pembelian pelanggan. Dashboard hanya diakses setelah login. Website publik tetap terbuka untuk semua pengunjung.",
     benefit: "Data bisnis terlindungi; data pelanggan tersimpan untuk program loyalitas.",
+    img: "/ref/feature_08.png",
   },
 ];
 

@@ -17,24 +17,18 @@ const deliverables = [
   {
     no: "04",
     title: "Panduan Penggunaan",
-    desc: "Dokumen panduan sederhana penggunaan dashboard. Rekaman sesi pelatihan (jika dilakukan via Zoom).",
+    desc: "Dokumen panduan sederhana penggunaan dashboard dan panduan cara pakai video untuk user.",
   },
   {
     no: "05",
-    title: "Pelatihan Langsung",
-    desc: "Sesi pelatihan penggunaan sistem untuk pemilik dan karyawan, durasi sesuai paket yang dipilih.",
-  },
-  {
-    no: "06",
     title: "Pendampingan Pasca-Launch",
-    desc: "Pendampingan via WhatsApp selama 7–14 hari pertama setelah sistem aktif. Respons sesuai paket.",
+    desc: "Pendampingan via WhatsApp selama 7–14 hari pertama setelah sistem aktif.",
   },
 ];
 
 const notIncluded = [
   "Biaya pembelian dan perpanjangan domain tahunan",
   "Desain logo atau aset merek (jika belum ada)",
-  "Integrasi dengan marketplace eksternal (Tokopedia, Shopee, dll.)",
   "Fitur di luar ruang lingkup paket yang dipilih",
 ];
 

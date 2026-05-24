@@ -27,7 +27,7 @@ const terms = [
   {
     no: "06",
     title: "Hak Kepemilikan",
-    desc: "Setelah pelunasan selesai, klien memiliki hak penuh atas sistem dan konten yang dibangun. Kode sumber diserahkan atas permintaan.",
+    desc: "Setelah pelunasan selesai, klien memiliki hak penuh atas sistem dan konten yang dibangun. Source code diserahkan atas permintaan.",
   },
   {
     no: "07",

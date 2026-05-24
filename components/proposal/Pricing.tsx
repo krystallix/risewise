@@ -12,53 +12,44 @@ const packages: PkgData[] = [
     no: "01",
     name: "Starter",
     setup: "Rp 3.500.000",
-    monthly: "Rp 300.000 / bln",
+    monthly: "Rp 50.000 / bln",
     features: [
       "Website publik toko",
       "Dashboard manajemen (1 akun)",
       "Katalog produk",
+      "Rekomendasi aki per kendaraan",
       "Transaksi penjualan",
-      "Invoice digital (download PNG)",
+      "Invoice digital",
       "SEO dasar",
-      "Pelatihan 2 jam",
-      "Support WA hari kerja (24 jam)",
     ],
   },
   {
     no: "02",
     name: "Bisnis",
     setup: "Rp 6.500.000",
-    monthly: "Rp 500.000 / bln",
+    monthly: "Rp 150.000 / bln",
     featured: true,
     features: [
       "Semua fitur Starter",
       "Transaksi beli stok dan tukar tambah",
       "Stok aki lama (tukar tambah)",
-      "Share invoice via WhatsApp + QR Code",
       "Database pelanggan",
-      "Rekomendasi aki per kendaraan",
       "Dashboard lengkap + grafik 6 bulan",
       "Artikel / blog + SEO lanjutan",
-      "Generator konten sosmed (PNG 1080×1080)",
-      "Pelatihan 4 jam",
-      "Support WA 7 hari (4 jam respons)",
     ],
   },
   {
     no: "03",
     name: "Pro",
     setup: "Rp 10.000.000",
-    monthly: "Rp 750.000 / bln",
+    monthly: "Rp 500.000 / bln",
     features: [
       "Semua fitur Bisnis",
-      "Auto-posting ke Facebook Marketplace",
       "Generator judul dengan AI",
-      "Custom domain pilihan klien",
       "Multi-akun (hingga 3 pengguna)",
       "Backup data otomatis harian",
       "Monitoring performa website",
-      "Pelatihan langsung di lokasi (Jogja)",
-      "Support prioritas (2 jam, termasuk Sabtu)",
+      "Support prioritas",
     ],
   },
 ];
@@ -201,9 +192,10 @@ export function Pricing() {
             </p>
             <ul style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
               {[
-                "Harga berlaku untuk wilayah Yogyakarta dan sekitarnya.",
                 "Biaya domain (.com) ~Rp 150.000–200.000/tahun, di luar paket. Pendaftaran dapat dibantu.",
                 "Pembayaran bertahap: 50% DP di awal, 50% pelunasan saat sistem selesai.",
+                "Harga fitur diluar paket bisa dinegosiasikan.", 
+                "Harga selain paket bisa dinegosiasikan."
               ].map((note, i) => (
                 <li key={i} style={{ fontSize: "13px", color: "#555", lineHeight: 1.5 }}>
                   <span style={{ marginRight: "8px", color: "#1754d4" }}>•</span>{note}

@@ -57,7 +57,7 @@ export function Closing() {
             }}
           >
             Hubungi saya via WhatsApp untuk jadwalkan sesi demo gratis 30 menit.
-            Saya akan tunjukkan langsung cara sistem ini bekerja, tanpa komitmen di muka.
+            Saya akan tunjukan bagaimana cara sistem ini bekerja, tanpa komitmen di depan.
           </p>
 
           <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
@@ -117,7 +117,6 @@ export function Closing() {
             >
               Aji Nursafiki (Risewise)<br />
               Yogyakarta, Indonesia<br />
-              Validitas penawaran: 30 hari sejak tanggal dokumen
             </p>
           </div>
           <span style={{ fontSize: "12px", color: "rgba(255,255,255,0.35)", fontWeight: 600 }}>

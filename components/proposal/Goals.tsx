@@ -10,7 +10,7 @@ const goals = [
 
 const scope = [
   { area: "Website Publik", items: "Beranda, katalog produk, rekomendasi aki, artikel/blog, tentang kami, kontak, FAQ, yang sudah dilengkapi dengan optimasi SEO" },
-  { area: "Dashboard Manajemen", items: "Login, transaksi, stok, katalog, pelanggan, invoice, laporan bisnis, artikel, generator konten" },
+  { area: "Dashboard Manajemen", items: "Login, transaksi, stok, katalog, pelanggan, invoice, laporan bisnis, artikel." },
   { area: "Fitur Pendukung", items: "Invoice digital, share WhatsApp, QR Code garansi, notifikasi stok, setup domain dan hosting" },
   { area: "Pelatihan", items: "Sesi pelatihan dan pendampingan penggunaan sistem sesuai paket yang dipilih" },
 ];
