@@ -18,21 +18,21 @@ export function PrintBar() {
         <button
           onClick={() =>
             window.open(
-              "https://wa.me/6281234567890?text=Halo+Aji%2C+saya+tertarik+dengan+proposal+sistem+toko+aki.",
+              "https://wa.me/6281247759998?text=Halo+Aji%2C+saya+tertarik+dengan+proposal+sistem+toko+aki.",
               "_blank"
             )
           }
           className="bg-transparent text-white/75 border border-white/25 px-2.5 py-1.5 sm:px-4 sm:py-1.5 text-[10px] sm:text-[11px] font-semibold cursor-pointer tracking-wider rounded flex items-center gap-1.5 hover:bg-white/10 transition-colors"
         >
-          <MessageCircle className="w-3.5 h-3.5 sm:hidden" />
+          <MessageCircle className="w-3.5 h-3.5" />
           <span className="hidden sm:inline">Chat WhatsApp</span>
-          <span className="inline sm:hidden">Chat</span>
+          <span className="inline sm:hidden">Whatsapp</span>
         </button>
         <button
           onClick={() => window.print()}
           className="bg-white text-[#1754d4] border-none px-2.5 py-1.5 sm:px-4 sm:py-1.5 text-[10px] sm:text-[11px] font-bold cursor-pointer tracking-wider rounded flex items-center gap-1.5 hover:bg-blue-50 transition-colors"
         >
-          <FileDown className="w-3.5 h-3.5 sm:hidden" />
+          <FileDown className="w-3.5 h-3.5 " />
           <span className="hidden sm:inline">Simpan PDF</span>
           <span className="inline sm:hidden">PDF</span>
         </button>

@@ -64,7 +64,7 @@ export function Closing() {
             <button
               onClick={() =>
                 window.open(
-                  "https://wa.me/6281234567890?text=Halo+Aji%2C+saya+tertarik+dengan+proposal+sistem+toko+aki.",
+                  "https://wa.me/6281247759998?text=Halo+Aji%2C+saya+tertarik+dengan+proposal+sistem+toko+aki.",
                   "_blank"
                 )
               }

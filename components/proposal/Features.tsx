@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 interface FeatureRow {
   no: string;
@@ -177,11 +176,9 @@ function FeatureItem({ f }: { f: FeatureRow }) {
               backgroundColor: "#fcfcfc",
             }}
           >
-            <Image
+            <img
               src={f.img}
               alt={f.imgAlt || ""}
-              width={1160}
-              height={500}
               style={{
                 width: "100%",
                 height: "auto",
