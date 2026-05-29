@@ -10,50 +10,48 @@ interface PkgData {
 const packages: PkgData[] = [
   {
     no: "01",
-    name: "Starter",
-    setup: "Rp 3.500.000",
-    monthly: "Rp 50.000 / bln",
+    name: "Landing Page",
+    setup: "Rp 1.200.000",
+    monthly: "Rp 45.000 / bln",
     features: [
-      "Website publik toko",
-      "Dashboard manajemen (1 akun)",
-      "Katalog produk",
-      "Rekomendasi aki per kendaraan",
-      "Transaksi penjualan",
-      "Invoice digital",
+      "Website profil bisnis 1–3 halaman",
+      "Informasi toko, layanan, dan kontak",
+      "Katalog produk sederhana",
+      "Tombol WhatsApp langsung",
+      "Desain responsif mobile",
       "SEO dasar",
     ],
   },
   {
     no: "02",
+    name: "Starter",
+    setup: "Rp 3.500.000",
+    monthly: "Rp 100.000 / bln",
+    featured: true,
+    features: [
+      "Semua fitur Landing Page",
+      "Dashboard manajemen (1 akun)",
+      "Katalog produk lengkap",
+      "Rekomendasi aki per kendaraan",
+      "Transaksi penjualan",
+      "Invoice digital",
+    ],
+  },
+  {
+    no: "03",
     name: "Bisnis",
     setup: "Rp 6.500.000",
-    monthly: "Rp 150.000 / bln",
-    featured: true,
+    monthly: "Rp 250.000 / bln",
     features: [
       "Semua fitur Starter",
       "Transaksi beli stok dan tukar tambah",
-      "Stok aki lama (tukar tambah)",
+      "Pencatatan stok aki lama",
       "Database pelanggan",
       "Dashboard lengkap + grafik 6 bulan",
       "Artikel / blog + SEO lanjutan",
     ],
   },
-  {
-    no: "03",
-    name: "Pro",
-    setup: "Rp 10.000.000",
-    monthly: "Rp 500.000 / bln",
-    features: [
-      "Semua fitur Bisnis",
-      "Generator judul dengan AI",
-      "Multi-akun (hingga 3 pengguna)",
-      "Backup data otomatis harian",
-      "Monitoring performa website",
-      "Support prioritas",
-    ],
-  },
 ];
-
 export function Pricing() {
   return (
     <div className="a4-page cream-page">
