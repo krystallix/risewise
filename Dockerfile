@@ -10,7 +10,7 @@ RUN corepack enable pnpm
 
 # Install dependencies
 COPY package.json pnpm-lock.yaml* ./
-RUN pnpm i --frozen-lockfile
+RUN pnpm i --frozen-lockfile --ignore-scripts
 
 # Rebuild the source code only when needed
 FROM base AS builder
