@@ -7,48 +7,50 @@ interface PkgData {
   features: string[];
 }
 
+
 const packages: PkgData[] = [
   {
     no: "01",
-    name: "Landing Page",
-    setup: "Rp 1.200.000",
-    monthly: "Rp 45.000 / bln",
+    name: "Starter",
+    setup: "Rp 3.500.000",
+    monthly: "Promo biaya bulanan gratis sampai 1 Januari 2027, lalu Rp 100.000 / bln",
     features: [
-      "Website profil bisnis 1–3 halaman",
-      "Informasi toko, layanan, dan kontak",
-      "Katalog produk sederhana",
-      "Tombol WhatsApp langsung",
-      "Desain responsif mobile",
+      "Website publik toko",
+      "Dashboard manajemen (1 akun)",
+      "Katalog produk",
+      "Rekomendasi aki per kendaraan",
+      "Transaksi penjualan",
+      "Invoice digital",
       "SEO dasar",
     ],
   },
   {
     no: "02",
-    name: "Starter",
-    setup: "Rp 3.500.000",
-    monthly: "Rp 100.000 / bln",
+    name: "Bisnis",
+    setup: "Rp 6.500.000",
+    monthly: "Promo biaya bulanan gratis sampai 1 Januari 2027, lalu Rp 250.000 / bln",
     featured: true,
     features: [
-      "Semua fitur Landing Page",
-      "Dashboard manajemen (1 akun)",
-      "Katalog produk lengkap",
-      "Rekomendasi aki per kendaraan",
-      "Transaksi penjualan",
-      "Invoice digital",
+      "Semua fitur Starter",
+      "Transaksi beli stok dan tukar tambah",
+      "Stok aki lama (tukar tambah)",
+      "Database pelanggan",
+      "Dashboard lengkap + grafik 6 bulan",
+      "Artikel / blog + SEO lanjutan",
     ],
   },
   {
     no: "03",
-    name: "Bisnis",
-    setup: "Rp 6.500.000",
-    monthly: "Rp 250.000 / bln",
+    name: "Pro",
+    setup: "Rp 10.000.000",
+    monthly: "Promo biaya bulanan gratis sampai 1 Januari 2027, lalu Rp 500.000 / bln",
     features: [
-      "Semua fitur Starter",
-      "Transaksi beli stok dan tukar tambah",
-      "Pencatatan stok aki lama",
-      "Database pelanggan",
-      "Dashboard lengkap + grafik 6 bulan",
-      "Artikel / blog + SEO lanjutan",
+      "Semua fitur Bisnis",
+      "Generator judul dengan AI",
+      "Multi-akun (hingga 3 pengguna)",
+      "Backup data otomatis harian",
+      "Monitoring performa website",
+      "Support prioritas",
     ],
   },
 ];
@@ -134,7 +136,7 @@ export function Pricing() {
                   <p style={{ fontSize: "11px", color: pkg.featured ? "rgba(255,255,255,0.6)" : "#888", marginBottom: "4px" }}>
                     sekali bayar (setup)
                   </p>
-                  <p style={{ fontSize: "13px", fontWeight: 600, color: pkg.featured ? "rgba(255,255,255,0.85)" : "#444" }}>
+                  <p style={{ fontSize: "11px", fontWeight: 600, color: pkg.featured ? "rgba(255,255,255,0.85)" : "#444" }}>
                     + {pkg.monthly}
                   </p>
                 </div>

@@ -242,6 +242,10 @@
   .page-inner {
     padding: 40px 28px;
   }
+  /* Removed from 860px query to keep horizontal on tablet */
+}
+
+@media (max-width: 640px) {
   .pricing-grid {
     grid-template-columns: 1fr;
   }
