@@ -77,7 +77,7 @@ export function Pricing() {
           <div className="rule-blue" />
 
           {/* Package cards */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "14px", marginBottom: "24px" }}>
+          <div className="pricing-grid">
             {packages.map((pkg) => (
               <div
                 key={pkg.no}
