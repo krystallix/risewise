@@ -1,15 +1,18 @@
 services:
   web:
-    image: node:20-alpine
-    working_dir: /app
-    ports:
-      - "3001:3000"
-    volumes:
-      - .:/app
-      - /app/node_modules
-      - /app/.next
-    environment:
-      - PORT=3000
-      - HOSTNAME=0.0.0.0
-      - NODE_ENV=development
-    command: sh -c "corepack enable pnpm && pnpm install && pnpm dev -H 0.0.0.0"
+    build:
+      context: .
+    restart: unless-stopped
+    labels:
+      - traefik.docker.network=dokploy-network
+      - traefik.http.routers.productivity-proposal-cohrvj-9-web.rule=Host(`proposal.arkane.my.id`)
+      - traefik.http.routers.productivity-proposal-cohrvj-9-web.entrypoints=web
+      - traefik.http.services.productivity-proposal-cohrvj-9-web.loadbalancer.server.port=3000
+      - traefik.http.routers.productivity-proposal-cohrvj-9-web.service=productivity-proposal-cohrvj-9-web
+      - traefik.enable=true
+    networks:
+      dokploy-network: {}
+      default: {}
+networks:
+  dokploy-network:
+    external: true
