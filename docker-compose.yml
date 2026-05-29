@@ -10,5 +10,6 @@ services:
       - /app/.next
     environment:
       - PORT=3000
+      - HOSTNAME=0.0.0.0
       - NODE_ENV=development
-    command: sh -c "corepack enable pnpm && pnpm install && pnpm dev"
+    command: sh -c "corepack enable pnpm && pnpm install && pnpm dev -H 0.0.0.0"
