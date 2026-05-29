@@ -1,3 +1,7 @@
+"use client";
+
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 interface FeatureRow {
   no: string;
@@ -176,18 +180,20 @@ function FeatureItem({ f }: { f: FeatureRow }) {
               backgroundColor: "#fcfcfc",
             }}
           >
-            <img
-              src={f.img}
-              alt={f.imgAlt || ""}
-              style={{
-                width: "100%",
-                height: "auto",
-                maxHeight: "210px",
-                display: "block",
-                objectFit: "cover",
-                objectPosition: "top",
-              }}
-            />
+            <Zoom>
+              <img
+                src={f.img}
+                alt={f.imgAlt || ""}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "210px",
+                  display: "block",
+                  objectFit: "cover",
+                  objectPosition: "top",
+                }}
+              />
+            </Zoom>
           </div>
         </div>
       )}
